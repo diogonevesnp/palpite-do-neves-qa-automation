@@ -1,3 +1,6 @@
+![Playwright Tests](https://github.com/diogonevesnp/palpite-do-neves-qa-automation/actions/workflows/playwright.yml/badge.svg)
+
+---
 ## $\color{#4ac565}{\textsf{\textbf{🚀 AUTOMAÇÃO DE TESTES - PALPITE DO NEVES}}}$
 
 >Projeto de automação de testes end-to-end (E2E) desenvolvido para validar as funcionalidades do web app **Palpite do Neves**, focado em garantir a estabilidade das previsões e navegação.

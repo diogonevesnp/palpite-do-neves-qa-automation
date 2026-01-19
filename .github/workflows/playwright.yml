@@ -20,11 +20,13 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        # Instala as dependências do seu projeto
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         pip install pytest-playwright
 
     - name: Install Playwright Browsers
       run: python -m playwright install --with-deps
 
     - name: Run Playwright tests
-      run: pytest --headed=false
+      # Removido o --headed=false, agora o pytest usará a configuração padrão
+      run: pytest

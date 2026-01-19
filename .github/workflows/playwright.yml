@@ -20,18 +20,19 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        # Instala os plugins necessários para o relatório e para o Playwright
+        pip install pytest-playwright pytest-html
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-        pip install pytest-playwright
 
     - name: Install Playwright Browsers
       run: python -m playwright install --with-deps
 
     - name: Run Playwright tests
-      # Geramos o relatório HTML automaticamente
+      # Agora o comando será reconhecido porque instalamos o pytest-html acima
       run: pytest --html=report.html --self-contained-html
 
     - name: Upload Test Report
-      if: always() # Garante que o relatório seja salvo mesmo se o teste falhar
+      if: always()
       uses: actions/upload-artifact@v4
       with:
         name: playwright-report

@@ -1,7 +1,7 @@
 ## $\color{#4ac565}{\textsf{\textbf{🚀 AUTOMAÇÃO DE TESTES - PALPITE DO NEVES}}}$
 
 >Projeto de automação de testes end-to-end (E2E) desenvolvido para validar as funcionalidades do web app **Palpite do Neves**, focado em garantir a estabilidade das previsões e navegação.
-
+>Esse é um projeto pessoal onde estou desenvolvendo um App Web com Inteligência Artificial da Hostinger a "Horizons".
 <h2 style="color: #4ac5b9;">🛠️ Tecnologias Utilizadas</h2>
 
 * **Linguagem:** Python 3.12

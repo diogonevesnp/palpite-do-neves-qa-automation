@@ -1,6 +1,24 @@
+# Ambientes virtuais e Python
 .venv/
+venv/
+env/
 __pycache__/
-.pytest_cache/
-test-results/
 *.pyc
 .env
+
+# Cache e resultados do Pytest
+.pytest_cache/
+test-results/
+
+# Relatórios e evidências de testes (Essencial para QA)
+# Impedem que seus testes locais "sujem" o repositório
+report.html
+playwright-report/
+blob-report/
+videos/
+screenshots/
+traces/
+
+# Arquivos temporários do Sistema Operacional
+.DS_Store
+Thumbs.db
